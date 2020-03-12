@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+          
+</head>
+<body>
+    <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo"></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      </ul>
+    </div>
+  </nav>
+{% block content %}
+    <div class="row">
+    {% for post in car_list %}
+    <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="{{ post.3 }}" alt="{{ post.0 }}">
+    <div class="card-body">
+        <h5 class="card-title">{{ post.0 }}</h5>
+        <strong><p class="card-text">Price :{{ post.1 }}</p></strong>
+        <a href="{{ post.2 }}" class="btn btn-primary">Go to car</a>
+    </div>
+    </div>
+        {% endfor %}
+    </div>
+  {% endblock %}
+</div>
+        
+    
+
+</body>
+
+</html>

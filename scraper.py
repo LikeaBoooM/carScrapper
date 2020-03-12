@@ -13,8 +13,8 @@ class Car :
 
 BASE_URL = "https://www.olx.pl/motoryzacja/samochody/"
 FILTER_URL = "?search%5Bfilter_float_price%3Afrom%5D={}&search%5Bfilter_float_price%3Ato%5D={}&search%5Bfilter_enum_petrol%5D%5B0%5D={}&search%5Bfilter_enum_transmission%5D%5B0%5D={}"
-BRAND = "Volkswagen"
-MODEL = "Golf"
+BRAND = "audi"
+MODEL = "a6"
 MODEL_URL = "{}/{}/".format(BRAND,MODEL)
 PRICE_FROM = 2000 
 PRICE_TO =  25000
